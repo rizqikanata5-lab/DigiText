@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiText - SMAS Kartini Batam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #6b7280 0%, #10b981 35%, #3b82f6 100%);
+        }
+        
+         .slider {
+      position: relative;
+      width: 100%;
+      max-width: 1500px;
+      height: 75vh;
+      margin: 60px auto 10px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      background: #ffff;
+      padding: 10px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 1s ease;
+      height: 100%;
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    .caption {
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+    .slide {
+            transition: transform 1s ease-in-out;
+        }
+        
+        .arrow-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .arrow-btn:hover {
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .dot {
+            transition: all 0.3s ease;
+        }
+        
+        .dot.active {
+            background-color: #3b82f6;
+            transform: scale(1.2);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: #10b981;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px);
+                animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+            50% { 
+                transform: translateY(-20px);
+                animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+    .vina {
+        width: 100%;
+        max-width: 200px;
+        }
+
+    .kanata {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .shane{
+        height: 25%;
+        max-height: 200px;
+        width: 125%;
+        max-width: auto;
+    }
+
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <div class="slider">
+    <div class="slides" id="slides">
+      <div class="slide"><a href="https://smakartinibatam.sch.id/read/1029/gsk-memeriahkan-hut-rsbk-ke-32-dan-perayaan-hut-eyang-sri-soedarsono-yang-ke-86"><img src="gsk.mb.jpg" alt=""><div class="caption">GSK memeriahkan HUT RSBK ke-32 dan Perayaan HUT Eyang Sri Soedarsono yang ke-86</div></a></div> 
+      <div class="slide"><a href= "https://smakartinibatam.sch.id/read/1028/kunjungan-kemenko-polkam-dan-dandim-0316batam-terkait-pelaksanaan-program-mbg"><img src="mbg.jpg" alt=""><div class="caption">Kunjungan Kemenko Polkam dan Dandim 0316/Batam terkait Pelaksanaan Program MBG</div></a></div>
+      <div class="slide"><a href = "https://smakartinibatam.sch.id/read/1027/project-based-learning-siswa-kelas-x"><img src="pjbl2.jpg" alt=""><div class="caption">Project Based Learning siswa Kelas X</div></a></div>
+      <div class="slide"><a href = "https://smakartinibatam.sch.id/read/1025/sosialisasi-pemilih-muda-dari-kpu-provinsi-kepulauan-riau"><img src="bapak.jpg" alt=""><div class="caption">Sosialisasi Pemilih Muda dari KPU Provinsi Kepulauan Riau</div></a></div>
+      <div class="slide"><a href = "https://www.youtube.com/watch?v=S3JKWEJylAQ&list=RDS3JKWEJylAQ&start_radio=1"><img src="gsk.mb.jpg" alt=""><div class="caption">GSK memeriahkan HUT RSBK ke-32 dan Perayaan HUT Eyang Sri Soedarsono yang ke-86</div></a></div>
+      <div class="slide"><a href = "https://smakartinibatam.sch.id/read/1028/kunjungan-kemenko-polkam-dan-dandim-0316batam-terkait-pelaksanaan-program-mbg"><img src="mbg.jpg" alt=""><div class="caption">Kunjungan Kemenko Polkam dan Dandim 0316/Batam terkait Pelaksanaan Program MBG</div></a></div> 
+    </div>
+    
+  </div>
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div><img src="kartunu.png" class="h-12 w-auto"></div>
+                    <span class="text-3xl font-black bg-gradient-to-r from-gray-600 via-emerald-500 to-blue-600 bg-clip-text text-transparent hover:from-emerald-600 hover:via-blue-500 hover:to-purple-600 transition-all duration-500 cursor-pointer transform hover:scale-105">
+                        DigiText
+                    <span class="text-sm md:text-base font-semibold text-gray-600 tracking-wide">SMAS KARTINI BATAM</span>
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-emerald-600 font-medium active">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-emerald-600 font-medium">Tentang</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-emerald-600 font-medium">Project</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-emerald-50 rounded-md">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-emerald-50 rounded-md">Tentang</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-700 hover:bg-emerald-50 rounded-md">Project</a>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Program Literasi Digital</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Program komprehensif yang dirancang untuk mempersiapkan siswa menghadapi era digital dengan keterampilan yang relevan dan etika yang kuat.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-gray-50 to-emerald-50 p-8 rounded-2xl text-center">
+                     <div class="text-3xl mb-4 text-center">🌐</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Meningkatkan Literasi Digital di Kalangan Siswa</h3>
+                    <p class="text-gray-600">Website ini dibuat untuk mengajak pelajar SMA Kartini Batam agar lebih paham dan bijak menggunakan teknologi digital, bukan hanya sebagai pengguna, tapi juga sebagai kreator konten yang positif dan bermanfaat.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-emerald-50 to-blue-50 p-8 rounded-2xl text-center">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Menampilkan Kreativitas dan Karya Siswa</h3>
+                    <p class="text-gray-600">Digitext menjadi wadah bagi siswa untuk mempublikasikan karya seperti e-book, proyek PJBL, podcast, dan game edukatif, sehingga kreativitas mereka bisa dilihat dan dihargai oleh banyak orang.</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-gray-50 p-8 rounded-2xl text-center">
+                    <div class="text-3xl mb-4 text-center">💻</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Menciptakan Media Belajar yang Menyenangkan dan Interaktif</h3>
+                    <p class="text-gray-600">Melalui tampilan yang menarik dan fitur yang interaktif, website ini diharapkan bisa membuat proses belajar menjadi lebih seru, tidak monoton, dan relevan dengan perkembangan teknologi masa kini.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Project & Resources</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Koleksi e-book, film pendek, dan materi pembelajaran interaktif untuk mendukung literasi digital</p>
+            </div>
+            
+             <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">📖 E-Book Collection</h3>
+                    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-8 text-center card-hover shadow-lg">
+                            <div class= "vina"><a href= "https://online.fliphtml5.com/sqbtv/izjm/#p=1"><img src="Blue Grey Modern AI Technology Ebook Cover.jpg" alt=""></a></div>
+                            <h4 class="font-bold text-gray-800 mb-3">Paduan Literasi Digital</h4>
+                            <button class="bg-white text-green-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="https://online.fliphtml5.com/sqbtv/fojf/">Lihat Buku</a>
+                            </button>
+                        </div>
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-8 text-center card-hover shadow-lg">
+                            <div class= "vina"><a href= "https://online.fliphtml5.com/nbwxo/arpn/"><img src="ebook2.jpeg" alt=""></a></div>
+                            <h4 class="font-bold text-gray-800 mb-3">Literasi Sains</h4>
+                            <button class="bg-white text-green-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="https://online.fliphtml5.com/nbwxo/arpn/">Lihat Buku</a>
+                            </button>
+                        </div>
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-8 text-center card-hover shadow-lg">
+                            <div class= "vina"><a href="https://online.fliphtml5.com/ukpso/kwaq/#p=1" ><img src="ebook.jpeg" alt=""></a></div>
+                            <h4 class="font-bold text-gray-800 mb-3">Literasi Numerasi</h4>
+                            <button class="bg-white text-green-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="https://online.fliphtml5.com/ukpso/kwaq/#p=1">Lihat Buku</a>
+                            </button>
+                        </div>
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-8 text-center card-hover shadow-lg">
+                            <div class= "vina"><a href= "https://online.fliphtml5.com/NEZA1720/ojnf/"><img src="ebook3.jpeg" alt=""></a></div>
+                            <h4 class="font-bold text-gray-800 mb-3">Motivasi Diri</h4>
+                            <button class="bg-white text-green-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="https://online.fliphtml5.com/NEZA1720/ojnf/">Lihat Buku</a>
+                            </button>
+                        </div>
+                        <div class="bg-white border-2 border-gray-200 rounded-xl p-8 text-center card-hover shadow-lg">
+                           <div class= "vina"><a href= "https://online.fliphtml5.com/blpqs/wmna/"><img src="ebook4.PNG" alt=""></a></div>
+                            <h4 class="font-bold text-gray-800 mb-3">Inovasi Masa Depan</h4>
+                            <button class="bg-white text-green-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="https://online.fliphtml5.com/blpqs/wmna/">Lihat Buku</a>
+                            </button>
+                        </div>
+                                           </div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div>
+                        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">🎬 Film Pendek</h3>
+                        <div class="bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl p-10 text-white text-center card-hover shadow-xl">
+                            <div class="kanata"><a href= ""><img src= "Sample.jpeg" /></a></div>
+                            <h4 class="text-2xl font-bold mb-4">Literasi dalam Aksi</h4>
+                            <p class="mb-6 text-lg opacity-90">Film dokumenter tentang pentingnya literasi digital di era modern</p>
+                            <button class="bg-white text-gray-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="">Tonton Sekarang</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">🎮 Game Edukasi</h3>
+                        <div class="bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl p-10 text-white text-center card-hover shadow-xl">
+                            <div class="kanata"><a href= "https://www.youtube.com/watch?v=V7pOVHHjD_U&t=496s"><img src= "Sample.jpeg" /></a></div>
+                            <h4 class="text-2xl font-bold mb-4">Petualangan Literasi</h4>
+                            <p class="mb-6 text-lg opacity-90">Game interaktif untuk belajar literasi digital dengan cara yang menyenangkan</p>
+                            <button class="bg-white text-gray-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="https://scratch.mit.edu/projects/1190759830/">Main Sekarang</a>
+                            </button>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">&#128241; Konten Digital</h3>
+                        <div class="bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl p-10 text-white text-center card-hover shadow-xl">
+                            <div class="kanata"><a href= "Konten.mp4"><img src= "konten2.jpg" class="shane"/></a></div>
+                            <h4 class="text-2xl font-bold mb-4">Literasi Digital untuk Generasi Hebat</h4>
+                            <p class="mb-6 text-lg opacity-90">Konten tentang pentingnya literasi digital di era sekarang</p>
+                            <button class="bg-white text-gray-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                                <a href="Konten.mp4">Tonton sekarang</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+    </section>
+
+    <section id="slogan" class="py-20 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="floating-animation inline-block text-6xl mb-8">🚀</div>
+            <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">Tingkatkan Literasi Digital</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-white/90 mb-8">Wujudkan Generasi Hebat</h3>
+            <p class="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto">Bersama membangun masa depan yang lebih cerah melalui pendidikan digital yang berkualitas dan berkelanjutan</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl font-black bg-gradient-to-r from-white via-emerald-300 to-blue-300 bg-clip-text text-transparent hover:from-emerald-300 hover:via-blue-300 hover:to-purple-300 transition-all duration-500 cursor-pointer">
+                            DigiText
+                        </span>
+                    </div>
+                    <p class="text-gray-400">Membangun generasi digital yang cerdas, kreatif, dan bertanggung jawab untuk masa depan yang lebih baik.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Tentang</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors">Project</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Kontak Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 smakartinib@gmail.com</p>
+                        <p>📞 0778-453731</p>
+                        <p>📍 Jl. Budi Kemuliaan No. 01 Kampung Seraya Kota Batam, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 DigiText Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+       const slides = document.getElementById("slides");
+    const totalSlides = 4; 
+    let index = 1; 
+
+    function moveSlide(direction) {
+      index += direction;
+      slides.style.transition = "transform 1s ease";
+      slides.style.transform = `translateX(-${index * 100}%) `;
+
+      if (index === totalSlides + 1) {
+        setTimeout(() => {
+          slides.style.transition = "none";
+          index = 1;
+          slides.style.transform = `translateX(-${index * 100}%) `;
+        }, 1000);
+      } else if (index === 0) {
+        setTimeout(() => {
+          slides.style.transition = "none";
+          index = totalSlides;
+          slides.style.transform = `translateX(-${index * 100}%) `;
+        }, 1000);
+      }
+    }
+
+    setInterval(() => moveSlide(1), 5000);
+
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+        
+        
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    mobileMenu.classList.add('hidden');
+                    
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            setTimeout(() => {
+                document.getElementById('success-message').classList.remove('hidden');
+            
+                event.target.reset();
+                
+                setTimeout(() => {
+                    document.getElementById('success-message').classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        }
+        
+        
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current} `) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+<script>
+    (function(){function c(){var b=a.contentDocument||a.contentWindow.document;
+        if(b){var d=b.createElement('script');
+        d.innerHTML="window.__CF$cv$params={r:'992551f30191ce6f',t:'MTc2MTA5NzU3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+        b.getElementsByTagName('head')[0].appendChild(d)}}
+        if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
+</script>
+</body>
+</html>
